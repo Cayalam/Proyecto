@@ -1,5 +1,6 @@
 from tkinter import *
 from tkinter import messagebox
+from tkinter import PhotoImage
 
 def boton_aceptar():
     # Segunda ventana
@@ -8,6 +9,7 @@ def boton_aceptar():
     ventana2.title("¿Edad actual que tienes?")
     ventana2.config(bg="Slategray2")
     ventana2.resizable(False, False)
+    
 
     Label1v2 = Label(text="Selecciona tù rango de edad")
 
@@ -48,6 +50,14 @@ def boton_aceptar():
         texto_niños= Label(ventana3, text= "\n--Ejercicios para personas adultos de 20 a 26 años--\n\n En esta edad pueden realiar los siquientes tipos de ejercicios:\n\n Baloncesto\n\nFutbol\n\n Baile\n\n")
         texto_niños.config(bg="OrangeRed3",fg="Black", font=("Comic Sans MS",22))
         texto_niños.place(x=50,y=5,width=900,height=500)
+    # Imagen que aparece en la entrada de los botones
+    img=PhotoImage(file="carlos.png")
+    lb_img= Label(ventana2,image=img)
+    lb_img.place(x=150,y=150) 
+    
+    # Imagen que aparece en la entrada de los botones
+    
+    
     
 
 
